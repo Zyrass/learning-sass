@@ -4,6 +4,13 @@
 }
 
 /* Mixin de deux fonts google */
-@mixin googleFonts($font_name_1, $font_name_2) {
-	@import url("https://fonts.googleapis.com/css?family=#{$font_name_2}|#{$font_name_2}");
+@mixin googleFonts($font_name_one, $font_name_two) {
+
+	$base: "https://fonts.googleapis.com/css?family=";
+	$font1: $font_name_one;
+	$separation: "|";
+	$font2: $font_name_two;
+	$result: $base + $font1 + $separation + $font2;
+	@import url($result);
+	
 }

@@ -5,9 +5,9 @@
 /* Mixin d'une font google */
 /* Mixin de deux fonts google */
 /* Inclusion de ma mixin contenant une seule font de google */
-@import url("https://fonts.googleapis.com/css?family=Cormorant Garamond");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
 /* Inclusion de ma mixin contenant deux fonts de google */
-@import url("https://fonts.googleapis.com/css?family=Goudy Bookletter 1911|Goudy Bookletter 1911");
+@import url("https://fonts.googleapis.com/css?family=Amita|Goudy+Bookletter+1911");
 /* Importation de mon fichier contenant les variables utiliser pour mon site. */
 /* D├®finitions des variables qui seront utiliser dans le code du site */
 /* Exemple d'h├®ritage pour centrer un ├®l├®ment. Aussi appel├® "Bloc de propri├®t├®" */
@@ -32,6 +32,7 @@ header {
   }*/ }
   header h1 {
     color: #2171AE;
+    /* Utilisation d'une police d'├®criture via ma mixin "googleFont" (SANS S) */
     font-family: 'Cookie', cursive;
     /* Utilisation du mot cl├® "&" qui se traduirait en javascript par "this". */ }
     header h1:hover {

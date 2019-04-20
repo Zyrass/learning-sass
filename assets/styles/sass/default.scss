@@ -4,9 +4,9 @@
  * en tapant simplement le nom de la police sans pour autant négliger les espaces. */
 @import 'googleFont';
 /* Inclusion de ma mixin contenant une seule font de google */
-@include googleFont("Cormorant Garamond");
+@include googleFont("Cormorant+Garamond");
 /* Inclusion de ma mixin contenant deux fonts de google */
-@include googleFonts("Amita", "Goudy Bookletter 1911");
+@include googleFonts("Amita", "Goudy+Bookletter+1911");
 
 /* Importation de mon fichier contenant les variables utiliser pour mon site. */
 @import 'variables';
@@ -39,8 +39,9 @@ header {
 	}*/
 	h1 {
 		color: $secondaryColor;
-		font-family: 'Cookie', cursive;
 
+		/* Utilisation d'une police d'écriture via ma mixin "googleFont" (SANS S) */
+		font-family: 'Cookie', cursive;
 
 		/* Utilisation du mot clé "&" qui se traduirait en javascript par "this". */
 		&:hover {
@@ -48,7 +49,6 @@ header {
 			color: $textColor;
 		}
 	}
-
 	
 	a {
 		// Utilisation d'une de mes polices d'écriture importer via ma mixin "googleFonts" (avec un S);
