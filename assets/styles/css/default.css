@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/* Importation de mon fichier contenant les variables utiliser pour mon site. */
+/* D├®finitions des variables qui seront utiliser dans le code du site */
+/* theme - 
+ * ------------------------
+ * 1 - purple
+ * 2 - black
+ * 3 - white
+ */
+/* Color */
+/* Fonts */
 /* EXERCICE - 
  * Cr├®er un MIXIN pour g├®n├®rer un lien permettant d'ajouter des fonts de google font 
  * en tapant simplement le nom de la police sans pour autant n├®gliger les espaces. */
@@ -8,16 +18,22 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
 /* Inclusion de ma mixin contenant deux fonts de google */
 @import url("https://fonts.googleapis.com/css?family=Amita|Goudy+Bookletter+1911");
-/* Importation de mon fichier contenant les variables utiliser pour mon site. */
-/* D├®finitions des variables qui seront utiliser dans le code du site */
 /* Exemple d'h├®ritage pour centrer un ├®l├®ment. Aussi appel├® "Bloc de propri├®t├®" */
 header,
 footer {
   text-align: center; }
 
+/* EXERCICE -
+ * Conception d'un theme qui sera interpr├¬ter selon le theme choisit.
+ */
 body {
-  width: calc(100vw - 2vw);
-  color: #fff; }
+  color: black;
+  background-color: white; }
+
+/* Conception d'une fonction avec SASS */
+body {
+  /* Utilisation du theme selon le choix s├®lectionn├® dans notre variable THEME */
+  width: calc(100vw - 2vw); }
 
 header,
 footer {

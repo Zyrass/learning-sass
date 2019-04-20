@@ -1,4 +1,19 @@
 /* Définitions des variables qui seront utiliser dans le code du site */
-$primaryColor: #383838;
-$secondaryColor: #2171AE;
-$textColor: #fff;
+
+/* theme - 
+ * ------------------------
+ * 1 - purple
+ * 2 - black
+ * 3 - white
+ */
+$theme:			black;
+
+/* Color */
+$primaryColor: 		#383838;
+$secondaryColor: 	#2171AE;
+$textColor: 		#fff;
+
+/* Fonts */
+$fontTitle: 	"Cormorant+Garamond";
+$fontContent:	"Goudy+Bookletter+1911";
+$fontLink:		"Amita";

@@ -1,25 +1,49 @@
+/* Importation de mon fichier contenant les variables utiliser pour mon site. */
+@import 'variables';
 
 /* EXERCICE - 
  * Créer un MIXIN pour générer un lien permettant d'ajouter des fonts de google font 
  * en tapant simplement le nom de la police sans pour autant négliger les espaces. */
 @import 'googleFont';
 /* Inclusion de ma mixin contenant une seule font de google */
-@include googleFont("Cormorant+Garamond");
+@include googleFont($fontTitle);
 /* Inclusion de ma mixin contenant deux fonts de google */
-@include googleFonts("Amita", "Goudy+Bookletter+1911");
-
-/* Importation de mon fichier contenant les variables utiliser pour mon site. */
-@import 'variables';
-
+@include googleFonts($fontLink, $fontContent);
 
 /* Exemple d'héritage pour centrer un élément. Aussi appelé "Bloc de propriété" */
 %text-center {
 	text-align: center
 }
 
+/* EXERCICE -
+ * Conception d'un theme qui sera interprêter selon le theme choisit.
+ */
+%theme {
+	
+	@if ($theme == purple) {
+		color: purple;
+		background-color: white;
+	}
+	@else if ($theme == black) {
+		color: black;
+		background-color: white;
+	}
+	@else {
+		color: white;
+		background-color: black;
+	}
+}
+
+/* Conception d'une fonction avec SASS */
+@function calcul() {
+	@return 15px + 15px;
+}
+
 body {
+
+	/* Utilisation du theme selon le choix sélectionné dans notre variable THEME */
+	@extend %theme;
 	width: calc(100vw - 2vw);
-	color: $textColor;
 }
 
 header,
