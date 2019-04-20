@@ -12,5 +12,6 @@
 	$font2: $font_name_two;
 	$result: $base + $font1 + $separation + $font2;
 	@import url($result);
-	
+
 }
+
