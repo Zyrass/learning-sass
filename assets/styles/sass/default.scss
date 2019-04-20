@@ -1,3 +1,32 @@
+$primaryColor: #383838;
+$secondaryColor: #2171AE;
+$textColor: #fff;
+
 body {
-	background-color: #FFE010;
+	width: calc(100vw - 2vw);
+	color: $textColor;
+}
+
+header,
+footer {
+	text-align: center;
+	background-color: $primaryColor;
+}
+
+header {
+	height: 10vh;
+	line-height: 10vh;
+}
+
+footer {
+	height: 20vh;
+	line-height: 20vh;	
+}
+
+main {
+	height: 70vh;
+	width: 80vw;
+	margin: 0 auto;
+	padding: 50px;
+	background-color: $secondaryColor;
 }

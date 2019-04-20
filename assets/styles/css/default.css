@@ -1,4 +1,25 @@
 body {
-  background-color: #FFE010; }
+  width: calc(100vw - 2vw);
+  color: #fff; }
+
+header,
+footer {
+  text-align: center;
+  background-color: #383838; }
+
+header {
+  height: 10vh;
+  line-height: 10vh; }
+
+footer {
+  height: 20vh;
+  line-height: 20vh; }
+
+main {
+  height: 70vh;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #2171AE; }
 
 /*# sourceMappingURL=default.css.map */
