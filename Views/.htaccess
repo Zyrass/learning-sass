@@ -1,0 +1,6 @@
+# deny from all permet de cacher le répertoire en cas de fausse manip dans son index.php
+# ainsi on permet de bloquer même l'accès au répertoire en lui même.
+
+# Pour permettre de voir le contenu on écrira : allow from all
+
+deny from all
