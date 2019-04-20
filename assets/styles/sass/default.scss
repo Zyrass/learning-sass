@@ -1,6 +1,10 @@
-$primaryColor: #383838;
-$secondaryColor: #2171AE;
-$textColor: #fff;
+/* Importation de mon fichier contenant les variables utiliser pour mon site. */
+@import 'variables';
+
+/* Exemple d'héritage pour centrer un élément. Aussi appelé "Bloc de propriété" */
+%text-center {
+	text-align: center
+}
 
 body {
 	width: calc(100vw - 2vw);
@@ -9,13 +13,28 @@ body {
 
 header,
 footer {
-	text-align: center;
+	// Utilisation de l'héritage qu'on a définit à text-center	
+	@extend %text-center;
 	background-color: $primaryColor;
 }
 
 header {
 	height: 10vh;
 	line-height: 10vh;
+	
+	/* Imbrication de la balise H1 du HEADER. Le code qui sera généré sera :
+	footer h1 {
+		color: #2171AE;
+	}*/
+	h1 {
+		color: $secondaryColor;
+
+		/* Utilisation du mot clé "&" qui se traduirait en javascript par "this". */
+		&:hover {
+			text-transform: uppercase;
+			color: $textColor;
+		}
+	}
 }
 
 footer {
