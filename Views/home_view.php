@@ -9,7 +9,7 @@
         <title><?= ucfirst($page) ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/styles/css/default.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -45,7 +45,7 @@
                     <dd>Sheets</dd>
                 </dl>
                 <p>A savoir qu'un fichier écrit en SASS devra se terminer par .sass alors qu'en SCSS il devra quant à lui se terminer par .scss</p>
-            </article>
+            </article> 
             
         </main>
 
