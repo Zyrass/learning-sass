@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/* EXERCICE - 
+ * Cr├®er un MIXIN pour g├®n├®rer un lien permettant d'ajouter des fonts de google font 
+ * en tapant simplement le nom de la police sans pour autant n├®gliger les espaces. */
+/* Mixin d'une font google */
+/* Mixin de deux fonts google */
+/* Inclusion de ma mixin contenant une seule font de google */
+@import url("https://fonts.googleapis.com/css?family=Cormorant Garamond");
+/* Inclusion de ma mixin contenant deux fonts de google */
+@import url("https://fonts.googleapis.com/css?family=Goudy Bookletter 1911|Goudy Bookletter 1911");
 /* Importation de mon fichier contenant les variables utiliser pour mon site. */
 /* D├®finitions des variables qui seront utiliser dans le code du site */
 /* Exemple d'h├®ritage pour centrer un ├®l├®ment. Aussi appel├® "Bloc de propri├®t├®" */
@@ -23,10 +32,13 @@ header {
   }*/ }
   header h1 {
     color: #2171AE;
+    font-family: 'Cookie', cursive;
     /* Utilisation du mot cl├® "&" qui se traduirait en javascript par "this". */ }
     header h1:hover {
       text-transform: uppercase;
       color: #fff; }
+  header a {
+    font-family: Amita, cursive; }
 
 footer {
   height: 20vh;
@@ -37,6 +49,7 @@ main {
   width: 80vw;
   margin: 0 auto;
   padding: 50px;
-  background-color: #2171AE; }
+  background-color: #2171AE;
+  font-family: "Goudy Bookletter 1911", serif; }
 
 /*# sourceMappingURL=default.css.map */

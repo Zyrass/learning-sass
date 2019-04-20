@@ -1,0 +1,9 @@
+/* Mixin d'une font google */
+@mixin googleFont($font_name) {
+	@import url("https://fonts.googleapis.com/css?family=#{$font_name}");
+}
+
+/* Mixin de deux fonts google */
+@mixin googleFonts($font_name_1, $font_name_2) {
+	@import url("https://fonts.googleapis.com/css?family=#{$font_name_2}|#{$font_name_2}");
+}

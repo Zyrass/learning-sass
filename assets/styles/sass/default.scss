@@ -1,5 +1,16 @@
+
+/* EXERCICE - 
+ * Créer un MIXIN pour générer un lien permettant d'ajouter des fonts de google font 
+ * en tapant simplement le nom de la police sans pour autant négliger les espaces. */
+@import 'googleFont';
+/* Inclusion de ma mixin contenant une seule font de google */
+@include googleFont("Cormorant Garamond");
+/* Inclusion de ma mixin contenant deux fonts de google */
+@include googleFonts("Amita", "Goudy Bookletter 1911");
+
 /* Importation de mon fichier contenant les variables utiliser pour mon site. */
 @import 'variables';
+
 
 /* Exemple d'héritage pour centrer un élément. Aussi appelé "Bloc de propriété" */
 %text-center {
@@ -28,12 +39,20 @@ header {
 	}*/
 	h1 {
 		color: $secondaryColor;
+		font-family: 'Cookie', cursive;
+
 
 		/* Utilisation du mot clé "&" qui se traduirait en javascript par "this". */
 		&:hover {
 			text-transform: uppercase;
 			color: $textColor;
 		}
+	}
+
+	
+	a {
+		// Utilisation d'une de mes polices d'écriture importer via ma mixin "googleFonts" (avec un S);
+		font-family: Amita, cursive;
 	}
 }
 
@@ -48,4 +67,7 @@ main {
 	margin: 0 auto;
 	padding: 50px;
 	background-color: $secondaryColor;
+
+	// Utilisation d'une de mes polices d'écriture importer via ma mixin "googleFonts" (avec un S);
+	font-family: "Goudy Bookletter 1911", serif;
 }
