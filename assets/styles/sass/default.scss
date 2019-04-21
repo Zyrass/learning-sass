@@ -10,6 +10,20 @@
 /* Inclusion de ma mixin contenant deux fonts de google */
 @include googleFonts($fontLink, $fontContent);
 
+/* EXERCICE Conception d'une class d'image avec la boucle EACH */
+@each $name in css, js, php, mysql {
+	.#{$name}-icon {
+		background-image: url("../../images/#{$name}.png");
+	}
+}
+
+/* Récupération de ma variable LIST dans ma BOUCLE @EACH */
+@each $test in $nom_de_ma_list {
+	.#{$test} {
+		content: #{$test};
+	}
+}
+
 /* Exemple d'héritage pour centrer un élément. Aussi appelé "Bloc de propriété" */
 %text-center {
 	text-align: center
@@ -56,6 +70,10 @@ footer {
 header {
 	height: 10vh;
 	line-height: 10vh;
+
+	// UTILISATION DE LA FONCTION NTH() QUI EST NATIVE DANS SASS
+	// /!\ IMPORTANT L'INDICE COMMENCE A 1 ET NON PAS A 0
+	content: nth($nom_de_ma_list, 5);
 	
 	/* Imbrication de la balise H1 du HEADER. Le code qui sera généré sera :
 	footer h1 {

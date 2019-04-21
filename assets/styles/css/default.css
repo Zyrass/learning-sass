@@ -9,6 +9,7 @@
  */
 /* Color */
 /* Fonts */
+/* Conception d'une liste qui sera utiliser dans ma boucle @EACH */
 /* EXERCICE - 
  * Cr├®er un MIXIN pour g├®n├®rer un lien permettant d'ajouter des fonts de google font 
  * en tapant simplement le nom de la police sans pour autant n├®gliger les espaces. */
@@ -18,6 +19,35 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
 /* Inclusion de ma mixin contenant deux fonts de google */
 @import url("https://fonts.googleapis.com/css?family=Amita|Goudy+Bookletter+1911");
+/* EXERCICE Conception d'une class d'image avec la boucle EACH */
+.css-icon {
+  background-image: url("../../images/css.png"); }
+
+.js-icon {
+  background-image: url("../../images/js.png"); }
+
+.php-icon {
+  background-image: url("../../images/php.png"); }
+
+.mysql-icon {
+  background-image: url("../../images/mysql.png"); }
+
+/* R├®cup├®ration de ma variable LIST dans ma BOUCLE @EACH */
+.toto {
+  content: toto; }
+
+.tata {
+  content: tata; }
+
+.tutu {
+  content: tutu; }
+
+.titi {
+  content: titi; }
+
+.tar tufle {
+  content: tar tufle; }
+
 /* Exemple d'h├®ritage pour centrer un ├®l├®ment. Aussi appel├® "Bloc de propri├®t├®" */
 header,
 footer {
@@ -42,6 +72,7 @@ footer {
 header {
   height: 10vh;
   line-height: 10vh;
+  content: "tar tufle";
   /* Imbrication de la balise H1 du HEADER. Le code qui sera g├®n├®r├® sera :
   footer h1 {
   	color: #2171AE;
