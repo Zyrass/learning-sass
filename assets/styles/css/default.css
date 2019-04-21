@@ -10,6 +10,7 @@
 /* Color */
 /* Fonts */
 /* Conception d'une liste qui sera utiliser dans ma boucle @EACH */
+/* EXO MAP */
 /* EXERCICE - 
  * Cr├®er un MIXIN pour g├®n├®rer un lien permettant d'ajouter des fonts de google font 
  * en tapant simplement le nom de la police sans pour autant n├®gliger les espaces. */
@@ -48,6 +49,28 @@
 .tar tufle {
   content: tar tufle; }
 
+/* EXO MAP */
+.blue {
+  color: blue; }
+
+.red {
+  color: red; }
+
+.pink {
+  color: pink; }
+
+.brown {
+  color: brown; }
+
+.orange {
+  color: orange; }
+
+.yellow {
+  color: yellow; }
+
+.green {
+  color: green; }
+
 /* Exemple d'h├®ritage pour centrer un ├®l├®ment. Aussi appel├® "Bloc de propri├®t├®" */
 header,
 footer {
@@ -72,7 +95,7 @@ footer {
 header {
   height: 10vh;
   line-height: 10vh;
-  content: "tar tufle";
+  content: titi;
   /* Imbrication de la balise H1 du HEADER. Le code qui sera g├®n├®r├® sera :
   footer h1 {
   	color: #2171AE;

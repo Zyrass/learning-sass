@@ -21,7 +21,7 @@
             <!-- Navigation -->
             <ul>
                 <li><a href="./?page=home">Accueil - (Home page)</a></li>
-            </ul> <!-- /Navigation -->
+            </ul> <!-- /Navigation -->0
         </header>
 
         <main>

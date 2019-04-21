@@ -24,6 +24,13 @@
 	}
 }
 
+/* EXO MAP */
+@each $key, $value in $colors  {
+	.#{$value} {
+		color: #{$value};
+	}
+}
+
 /* Exemple d'héritage pour centrer un élément. Aussi appelé "Bloc de propriété" */
 %text-center {
 	text-align: center
@@ -73,7 +80,7 @@ header {
 
 	// UTILISATION DE LA FONCTION NTH() QUI EST NATIVE DANS SASS
 	// /!\ IMPORTANT L'INDICE COMMENCE A 1 ET NON PAS A 0
-	content: nth($nom_de_ma_list, 5);
+	content: nth($nom_de_ma_list, -2);
 	
 	/* Imbrication de la balise H1 du HEADER. Le code qui sera généré sera :
 	footer h1 {
